@@ -1,0 +1,21 @@
+<h1 style="text-align: center;">Log in</h1>
+<div fxLayout="row" fxLayout.xs="column">
+<div fxFlex="50" fxLayout="column">
+    <div fxLayout="column">
+        <mat-form-field fxFlex="50">
+            <mat-label>Nombre de usuario</mat-label>
+            <input type="text" matInput [(ngModel)]="user.usuario" required>
+        </mat-form-field>
+        <mat-form-field fxFlex="50">
+            <mat-label>Contraseña</mat-label>
+            <input type="text" matInput [(ngModel)]="user.contrasenia" required>
+        </mat-form-field>
+    </div>
+    <br>
+    <div fxLayout>
+        <span class="slicer"></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button mat-raised-button color="primary" (click)="login()">Ingresar</button>
+    </div>
+</div>
+</div>
